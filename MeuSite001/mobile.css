@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media (max-width: 1080px){
+    header {
+        font-size: 15px;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .search-bar {
+        background: rgb(19, 19, 19);
+        text-align: center center;
+        padding: 13px;
+        width: 130px;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        transition: border-color 0.3s ease;
+    }
+
+    .search-container {
+        padding-left: 45px;
+    }
+
+     .logo {
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .auth-links a {
+        text-decoration: none;
+        color: white;
+        margin-left: 1px;
+        font-size: 12px;
+        position: relative;
+    }
+
+    .game {
+        width: 120px; 
+    }
+}

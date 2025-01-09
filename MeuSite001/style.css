@@ -1,0 +1,180 @@
+@charset"UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(16, 16, 16);
+}
+
+.background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-image: url(img/controle-ps5.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.background-image::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: -1; 
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 80px;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+nav ul li a:hover {
+    transition: 0.3s;
+    color: rgb(68, 68, 68);
+}
+
+.search-bar {
+    background: rgb(19, 19, 19);
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    border: 2px solid black;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:hover {
+    border-color: white;
+}
+
+.search-container {
+    padding-right: 50px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.auth-links a:hover {
+    transition: 0.3s;
+    color: rgb(68, 68, 68);
+}
+
+.auth-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+
+.auth-links a:hover::after {
+    width: 100%; 
+}
+
+.games-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding: 25px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.game {
+    text-align: center;
+    max-width: 190px;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.game img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.game-title {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    transition: color 0.3s ease;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.game-title:hover {
+    color: rgb(68, 68, 68); 
+}
+
