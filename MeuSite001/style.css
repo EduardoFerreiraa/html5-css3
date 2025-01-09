@@ -49,8 +49,8 @@ header {
 }
 
 .logo {
-    color: white;
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 nav ul {
@@ -93,8 +93,8 @@ nav ul li a:hover {
 .search-bar {
     background: rgb(19, 19, 19);
     text-align: center;
-    padding: 8px 10px;
-    border-radius: 8px;
+    padding: 10px 10px;
+    border-radius: 10px;
     font-size: 16px;
     width: 200px;
     border: 2px solid black;
@@ -111,15 +111,17 @@ nav ul li a:hover {
 }
 
 .auth-links a {
+    padding: 4.3px;
+    right: 25px;
     text-decoration: none;
     color: white;
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 18px;
     position: relative;
 }
 
 .auth-links a:hover {
-    transition: 0.3s;
+    transition: 0.4s;
     color: rgb(68, 68, 68);
 }
 

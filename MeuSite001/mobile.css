@@ -2,7 +2,7 @@
 
 @media (max-width: 1080px){
     header {
-        font-size: 15px;
+        font-size: 18px;
         justify-content: space-evenly;
     }
 
@@ -11,10 +11,12 @@
     }
 
     .search-bar {
+        position: relative;
         background: rgb(19, 19, 19);
         text-align: center center;
+        left: 18px;
         padding: 13px;
-        width: 130px;
+        width: 150px;
         border-radius: 10px;
         font-size: 15px;
         color: white;
@@ -26,7 +28,7 @@
     }
 
      .logo {
-        font-size: 14px;
+        font-size: 10px;
         margin: 2px;
     }
 
@@ -35,10 +37,11 @@
         color: white;
         margin-left: 1px;
         font-size: 12px;
+        left: 0.1px;
         position: relative;
     }
 
     .game {
-        width: 120px; 
+        width: 125px; 
     }
 }
